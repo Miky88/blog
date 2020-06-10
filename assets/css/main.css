@@ -1,0 +1,28 @@
+@import url("https://samplasion.js.org/css/styles.min.css");
+.panel .panel-heading a { color: white; }
+
+@media all and (min-width: 1024px) { .incline article { transform: rotateZ(0); transition: transform 0.5s ease; }
+  .incline-cw:hover article { transform: rotateZ(5deg); }
+  .incline-ccw { transform: rotateZ(0); transition: transform 0.5s ease; }
+  .incline-ccw:hover article { transform: rotateZ(-5deg); }
+  :not(.navbar) a:not(.button) { transition: text-shadow 0.5s ease; }
+  :not(.navbar) a:not(.button):hover { text-shadow: #030303 0rem 0.3rem 0.5rem; } }
+div.post img { object-fit: cover; }
+
+blockquote { border-left: 2px solid #c44040; padding-left: .75em; }
+
+@media all and (prefers-color-scheme: dark) { img.image-404 { filter: invert(85%); } }
+@media all and (max-width: 1024px) { .container { margin: 0 1.5rem; } }
+.navbar > .container { width: unset; }
+
+/* Tooltip container */
+.tooltip { position: relative; display: inline-block; border-bottom: 1px dotted black; }
+.tooltip .tooltiptext { visibility: hidden; width: 120px; background-color: #555; color: #fff; text-align: center; padding: 5px 0; border-radius: 6px; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -60px; opacity: 0; transition: opacity 0.3s; }
+.tooltip .tooltiptext::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #555 transparent transparent transparent; }
+.tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+
+/* Tooltip arrow */
+.tooltip .tooltiptext .tooltip:hover .tooltiptext { visibility: visible; opacity: 1; }
+
+@media (min-width: 768px) { article.post { margin: 0 7.5%; } }
+article.post p { margin: .75rem 0 !important; }
